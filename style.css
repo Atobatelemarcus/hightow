@@ -132,6 +132,7 @@ body{
   height: 20px;
   color: aliceblue;
   background:none;
+  margin-right:4px;
 
 }
 .sidebar{
@@ -159,6 +160,7 @@ body{
 
 .first{
   justify-items: center;
+  align-items:center;
   margin-top: 10px;
 }
 .firstsect{
@@ -470,6 +472,8 @@ footer{
   margin-top: 20px;
   display:flex;
   flex-direction:column;
+  justify-items: center;
+  align-items: center;
 }
 #sub{
   width: 215px;
@@ -620,9 +624,8 @@ footer{
   display:none;
 }
 
-
   
-}
+
 @media(min-width:989px){
   footer{
   display: flex;
@@ -632,6 +635,8 @@ footer{
   display: flex;
   justify-content: space-evenly;
   gap: 8px;
+  justify-items:center;
+  align-items:center;
 }
 }
 
@@ -659,4 +664,5 @@ footer{
 }
   
 }
+
 
