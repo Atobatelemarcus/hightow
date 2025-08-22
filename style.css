@@ -35,6 +35,8 @@
 body{
   height: auto;
   box-sizing: border-box;
+  margin: auto;
+
 }
 
 .lgs-header{
@@ -657,3 +659,4 @@ footer{
 }
   
 }
+
