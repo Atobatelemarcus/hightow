@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tower</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- large  screens-->
+  <nav class="lgs-header">
+    <h1 class="large-title">HighTowers</h1> 
+    <div class="text1">
+      <h2 class="innertext">HOME</h2>
+      <h2 class="innertext">ABOUT</h2>
+      <h2 class="innertext">TOUR</h2>
+      <h2 class="innertext">PACKAGE</h2>
+      <h2 class="innertext">CONTACT</h2>
+    </div>
+    <button class="lgsbtn">BOOK TRIP</button>
+  </nav>
+  <!---small screens-->
+  <nav class="head">
+    <h1 class="title">High Towers</h1>
+    <button class="top-btn" id="sidebtn"><img src="./align-justify.png" alt="" id="fas"></button>
+  </nav>
+  <!--sidebar-->
+      <div class="sidebar" id="sideBar">
+                <button class="sbtn" id="close">X</button>
+                <p class="side" onclick="home()">Home</p>
+                <p class="side" onclick="about()">About us</p>
+                <p class="side" onclick="contact()">contact</p>
+                <p class="side">Login</p>
+        </div>
+  <!---->
+
+  <section class="first">
+    <div class="firstsect">
+      <h4 class="subtext1"> ELEVATE YOUR TRAVEL JOURNEY</h4>
+      <h1 class="subtext2">Experience The Magic of <span id="flight">Flight</span></h1>
+      <button class="firstbtn">Book A Trip Now</button>
+      <img src="./asset/header.png" alt="airplane" class="airplane">
+    </div>
+  </section>
+  <section class="second">
+    <h1 class="subtext2">Popular Destination</h1>
+    <p class="subtext1">Discover the Most Loved Destinations Around the Globe</p>
+    <div class="cards">
+      <div class="eachcard">
+        <img src="./asset/destination-1.jpg" alt="" class="card">
+        <div class="cardy">
+          <h3 class="intext">Tradition and Futurism <span id="incard">New York city,USA</span></h3>
+          <button class="cardbtn">&#9733 4.7</button>
+        </div>
+      </div>
+      <!--ssecond card-->
+      <div class="eachcard">
+        <img src="./asset/destination-2.jpg" alt="" class="card">
+        <div class="cardy">
+          <h3 class="intext">The City of Lights    <span id="incard">Paris,France</span></h3>
+          <button class="cardbtn">&#9733 4.7</button>
+        </div>
+      </div>
+
+      <div class="eachcard">
+        <img src="./asset/destination-3.jpg" alt="" class="card">
+        <div class="cardy">
+          <h3 class="intext">Island of the Gods    <span id="incard">Bail,indonesia</span></h3>
+          <button class="cardbtn">&#9733 4.8</button>
+        </div>
+      </div>   
+    </div>
+
+    <div class="hero-middle">
+      <h1 class="midtext">Journey To The Sky Made simple!</h1>
+      <p class="subtext">Effortless planning for your next Adventure</p>
+    </div>
+    <div class="middlecard" >
+      <div class="middle"> 
+         <button class="ibtn"><i class="fas fa-money"></i></button>
+        <p class="midtext">Seamless Booking Process</p>
+      </div>
+      <div class="middle">
+         <button class="ibtn"><i class="fas fa-hotel"></i></button>
+        <p class="midtext">Tailored iteneries</p>
+      </div>
+      <div class="middle">
+        <button class="ibtn"><i class="fas fa-umbrella-beach"></i></button>
+        <p class="midtext">Expert Local Insight</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="third">
+    <img src="./showcase.jpg" alt="" class="thirdimg">
+    <div class="thirdsec">
+      <h1 class="thirdtext">UNLEASH WANDERLUST WITH HIGHTOWERS</h1>
+      <P class="thirdtxt">Embark on a journey like no other with skywings, where your travels dream comes to life. Our mission is to inspire and facilitate your adventures
+        . Whether you seek the vibrant energy of bustling city scapes, the serene beauty pristine beaches or the captivating history of ancient landmarks.
+        At skywings we provide  expertly curated destinations and personalized iteneraries, ensuring that every trips is tailored to your unique preferences.
+        Discover hidden gems, immerse yourself in diverse cultures and create unforgetteble memories that will last a lifetime.
+        With skywings as your ultimate travel companion, exploring the wonders of the world has not been easier. Our insider tips and local insights give you the tools to navigate
+        new places with excitement and satisfaction.
+        From the moment you start your planning to the day you return home, we are dedicated to make your travel exprience seamless and enriching.
+      </P>
+      <button class="thirdbtn">Book a flight now</button>
+    </div>
+  </section>
+  <section class="fourth">
+    <div class="middlecard" >
+      <div class="middle"> 
+        <h2 class="fouthcard">10+</h2>
+        <p class="fourtext">Years of Experience</p>
+      </div>
+      <div class="middle">
+       <h2 class="fouthcard">12k</h2>
+        <p class="fourtext">Happy Clients</p>
+      </div>
+      <div class="middle">
+        <h2 class="fouthcard">&#9733 4.8</h2>
+        <p class="fourtext">Overall Ratings</p>
+      </div>
+    </div>
+  </section>
+  <section class="fifth">
+    <h1 class="fiftext">Discover The World From Above</h1>
+    <h2 class="fift">Experience Breaktaking View and Unique Perspectives</h2>
+    <div class="fifthcard">
+      <div class="fifcard">
+        <button class="ibtn"><i class="fas fa-hotel"></i></button>
+        <h2 class="fiftext">Aerial Cityscapes</h2>
+        <p class="fift">Witness the architectural marvels  and bustling streets from bird's eye view, offering a unique perspective .</p>
+      </div>
+
+      <div class="fifcard">
+        <button class="ibtn"><i class="fas fa-umbrella-beach"></i></button>
+        <h2 class="fiftext">Coastal wonders</h2>
+        <p class="fift">Fly over pristine coastlines and turquoise waters revealing hidden coves and vibrant coral reefs.</p>
+      </div>
+
+      <div class="fifcard">
+        <button class="ibtn"><i class="fas fa-mountain"></i></button>
+        <h2 class="fiftext">Historic Landmarks</h2>
+        <p class="fift">Observe the grandeur of ancient castles and other significant sites in a way that ground tours can't offer.</p>
+      </div>
+    </div>
+  </section>
+  <section class="sixth">
+    <h2 class="fiftext">
+      Loved By over Thousand Travelers. <br><span class="fift">Discover the stories of wanderlust and cherised memories through eyes of our valued clients</span>
+    </h2>
+    
+    <div class="sixcontainer">
+        <div class="sixcard">
+          <div class="innersixcard">
+             <p class="sixtext">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+            <p class="sixt">Skywings has completely has completely transformed my travelling experience. From finding hidden gems in bustling cities</p>
+          </div>
+          <div class="innersix2">
+            <img src="./asset/client-1.jpg" alt="" style="width: 60px; height: 60px; border-radius: 100%;"> 
+              <div class="innername" style="display: flex; flex-direction: column; margin-top: 10px;">
+                <p style="margin:0px; font-size: 24px; font:bolder;">John barrow</p>
+                <p style="margin: 0px;">Travel Blogger</p>
+              </div>  
+          </div>
+       </div>
+       <!---two-->
+       <div class="sixcard">
+          <div class="innersixcard">
+             <p class="sixtext">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+            <p class="sixt">My recent adventure with Skywings was nothing short of spectacular. The personalized itineraries and recommendations they provided led me to extraordinary locations that I would never have found on my own. I'm already planning my next adventure with them!
+            </p>
+          </div>
+          <div class="innersix2">
+            <img src="./asset/client-2.jpg" alt="" style="width: 60px; height: 60px; border-radius: 100%;"> 
+              <div class="innername" style="display: flex; flex-direction: column; margin-top: 10px;">
+                <p style="margin:0px; font-size: 24px; font:bolder;"> Emily Thompson</p>
+                <p style="margin: 0px;">Advenure Enthusiast</p>
+              </div>  
+          </div>
+       </div>
+       <!--three-->
+       <div class="sixcard">
+          <div class="innersixcard">
+             <p class="sixtext">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+            <p class="sixt">Skywings has completely has completely transformed my travelling experience. From finding hidden gems in bustling cities</p>
+          </div>
+          <div class="innersix2">
+            <img src="./asset/client-1.jpg" alt="" style="width: 60px; height: 60px; border-radius: 100%;"> 
+              <div class="innername" style="display: flex; flex-direction: column; margin-top: 10px;">
+                <p style="margin:0px; font-size: 24px; font:bolder;">John barrow</p>
+                <p style="margin: 0px;">Travel Blogger</p>
+              </div>  
+          </div>
+       </div>
+
+       <div class="sixcard">
+          <div class="innersixcard">
+             <p class="sixtext">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+            <p class="sixt">
+              Skywings offered a transformative experience for my research into historical landmarks. The unique aerial perspectives and provided a new level of appreciation and insight into the sites I studied. I highly recommend their services to fellow historians and cultural enthusiasts.
+          client
+         </p>
+          </div>
+          <div class="innersix2">
+            <img src="./asset/client-3.jpg" alt="" style="width: 60px; height: 60px; border-radius: 100%;"> 
+              <div class="innername" style="display: flex; flex-direction: column; margin-top: 10px;">
+                <p style="margin:0px; font-size: 24px; font:bolder;">Sarah Lee</p>
+                <p style="margin: 0px;">Cultural Historian</p>
+              </div>  
+          </div>
+       </div>
+
+       <div class="sixcard">
+          <div class="innersixcard">
+             <p class="sixtext">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+            <p class="sixt">
+              Finding a balance between work and travel can be challenging, but Skywings made it effortless. Their efficient planning and excellent recommendations helped me maximize my downtime and enjoy every moment of my trip. I look forward to working with them again on future travels.
+            </p>
+          </div>
+          <div class="innersix2">
+            <img src="./asset/client-4.jpg" alt="" style="width: 60px; height: 60px; border-radius: 100%;"> 
+              <div class="innername" style="display: flex; flex-direction: column; margin-top: 10px;">
+                <p style="margin:0px;" id="testname">David Patel</p>
+                <p style="margin: 0px;" id="testname">Travel Blogger</p>
+              </div>  
+          </div>
+       </div>
+      </div>
+   </section>
+   <footer>
+    <div class="footerhead">
+      <div class="footer1">
+      <h1>High Tower</h1>
+      <p style="width:450px;">Explore the world with ease and excitement through our comprehensive travel platform. Your journey begins here, where seamless planning meets unforgettable experiences</p>
+    <i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"></i><i class="fab fa-youtube"></i>
+    </div>
+  
+    <div class="footer2">
+      <h1> Quick Links</h1>
+      <p>Home</p>
+      <p>flights</p>
+      <p>Hotels</p>
+      <p>cruise</p>
+    </div>
+    <div class="footer3">
+      <h1>Contact us</h1>
+      <div class="innerfooter3">
+        <i class="fas fa-phone"></i><p>+919876543210</p>
+        <i class=" fas fa-message"></i> <p>info@hightower</p>
+        <i class="fas fa-location"></i><p>Lagos,Nigeria</p>
+      </div>
+    </div>
+    <div class="footer4">
+      <h1> Subscribe</h1>
+       <input type="text" placeholder="Enter your email" id="sub">
+       <button id="subtn">Subscribe</button>
+    </div>
+    </div>
+    <p class="copy">copyright 2024 Atobatele Marcus. All rights reserved.</p>
+   </footer>
+  <script src="tower.js"></script>
+</body>
+</html>
