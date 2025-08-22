@@ -35,7 +35,7 @@
 body{
   height: auto;
   box-sizing: border-box;
-  margin: auto;
+  
 
 }
 
@@ -318,7 +318,6 @@ animation:slideIn 3s ease;
 .thirdimg{
   width: 50%;
   border-radius: 20px;
-  justify-items: center;
   animation:slideInleft 0.3s ease-out;
   animation-delay:0.1s;
  
@@ -664,5 +663,48 @@ footer{
 }
   
 }
+/* --- Global reset & overflow guard --- */
+html, body { margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+body { overflow-x: hidden; } /* prevents phantom right gap from any overflow */
+
+/* --- Center all major page blocks without touching HTML --- */
+:root { --page-max: 1200px; --page-pad: 16px; }
+nav, section, footer {
+  max-width: var(--page-max);
+  margin-inline: auto;         /* centers the block */
+  padding-inline: var(--page-pad);
+}
+
+/* --- Ensure common items actually center --- */
+img.thirdimg,
+.airplane {
+  display: block;
+  margin-inline: auto;         /* centers those images */
+}
+
+.eachcard,
+.fifcard,
+.middle {
+  margin-inline: auto;         /* centers cards/feature boxes */
+}
+
+/* --- Flex rows default to centered content --- */
+.cards,
+.middlecard,
+.third,
+.fifthcard,
+.sixcontainer {
+  justify-content: center;
+}
+
+/* Narrow layouts: let sliders use full width so they don't hug the left */
+.sixcontainer { width: 100%; }
+
+/* Optional: nicer widths on large screens while staying centered */
+@media (min-width: 769px) {
+  .eachcard, .fifcard { max-width: 360px; }
+  .thirdimg { max-width: 640px; }
+  }
 
 
